@@ -36,7 +36,22 @@ st.markdown("### Trimco Solutions Assistant")
 
 # Sidebar content
 with st.sidebar:
-    st.header("範例問題 / Template Questions")
+
+    st.subheader("簡介 / About")
+
+    st.markdown("""
+    此工具為基於 RAG 架構的 AI 助手，將 Trimco 官網內容轉化為可用的銷售與解決方案知識工具，支援查詢產品資訊、客戶案例，以及生成具實用性的銷售建議。
+
+    This tool is a RAG-based AI assistant that turns Trimco’s website content into a practical sales and solutions knowledge tool, supporting product queries, customer case retrieval, and generation of sales-ready insights.
+    """)
+
+    st.markdown(
+        "[View project README on GitHub](https://github.com/cmwhknz/trimco-solutions-assistant)"
+    )
+
+    st.divider()
+
+    st.subheader("範例 / Template")
 
     st.markdown("""
     - 找一個與 DPP（數位產品護照）準備相關的客戶案例
@@ -86,7 +101,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # Chat input
-prompt = st.chat_input("請輸入你的問題 / Ask your question...")
+prompt = st.chat_input("請輸入問題 / Ask a question...")
 
 if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
