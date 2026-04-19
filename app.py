@@ -32,7 +32,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Trimco Solutions Assistant")
+st.markdown("### Trimco Solutions Assistant")
 
 # Sidebar content
 with st.sidebar:
