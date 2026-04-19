@@ -8,8 +8,8 @@ This prototype demonstrates how static content can be transformed into a queryab
 
 ## Screenshot
 <p>
-  <img src="./screen01.png" width="400"/>
-  <img src="./screen02.png" width="400"/>
+  <img src="./screen01.png" width="400" style="border:1px solid #555;margin-right:1%;" />
+  <img src="./screen02.png" width="400" style="border:1px solid #555;" />
 </p>
 
 ## Use Case
