@@ -7,13 +7,26 @@ st.set_page_config(page_title="Trimco Solutions Assistant")
 # Sidebar width (CSS hack)
 st.markdown(
     """
+    
     <style>
+        /* Sidebar font size */
         section[data-testid="stSidebar"] {
-            width: 500px !important;
+            font-size: 14px !important;
         }
-        section[data-testid="stSidebar"] > div {
-            width: 500px !important;
+
+        /* Optional: make headers smaller */
+        section[data-testid="stSidebar"] h1,
+        section[data-testid="stSidebar"] h2,
+        section[data-testid="stSidebar"] h3 {
+            font-size: 16px !important;
         }
+
+        /* Optional: shrink markdown text (lists, etc.) */
+        section[data-testid="stSidebar"] p,
+        section[data-testid="stSidebar"] li {
+            font-size: 13px !important;
+        }
+
     </style>
     """,
     unsafe_allow_html=True,
