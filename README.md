@@ -63,7 +63,7 @@ To better support real usage, the assistant was configured with a few key behavi
 
 
 
-## Cost Consideration
+## Cost Summay (USD)
 
 - Model: OpenAI GPT-oss-20b  
   - Input: $0.05 / 1M tokens  
@@ -84,8 +84,7 @@ To better support real usage, the assistant was configured with a few key behavi
   - Cost: **~$20/month**
 
 **Summary:**  
-Fixed cost is mainly infrastructure (~$20/month), while inference cost per query is minimal and scales with usage.
-
+Infrastructure cost (~$20/month) is the primary fixed cost, while both inference (~$0.0004 per query) and one-time indexing (~$0.02–0.05) are minimal and scale efficiently with usage.
 
 
 ## Notes

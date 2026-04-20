@@ -51,6 +51,20 @@ with st.sidebar:
 
     st.divider()
 
+    st.subheader("成本概覽 (USD) / Cost Summary (USD)")
+
+    st.markdown("""
+    - 基礎設施：約 $20/月  
+    - 查詢與一次性索引成本可忽略  
+    """)
+
+    st.markdown("""
+    - Infrastructure: ~$20/month  
+    - Per-query and one-time indexing costs are minimal  
+    """)
+
+    st.divider()
+
     st.subheader("範例 / Template")
 
     st.markdown("""
